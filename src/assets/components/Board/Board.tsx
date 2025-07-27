@@ -1,5 +1,5 @@
 import Grid from "@mui/material/Grid";
-import FactionSection from "../Factions/FactionsSection";
+import FactionSection from "../Factions/FactionSection";
 
 function Board() {
     return (
