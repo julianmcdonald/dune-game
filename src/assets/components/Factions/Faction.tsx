@@ -1,19 +1,26 @@
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import type { Spaces } from "../Board/Spaces";
+import type { Resources, Spaces } from "../Board/Spaces";
+import InfluenceTrack from "../Board/InfluenceTrack";
 
 type FactionProps = {
-    factionName: string;
     spaces: Spaces[];
+    influenceTrackSpots: InfluenceSpot[];
+    factionName: string;
 };
 
-function Faction({ factionName, spaces }: FactionProps) {
+export type InfluenceSpot = {
+    spotNumber: number;
+    reward?: Resources | Spaces["reward"];
+};
+
+function Faction({ factionName, influenceTrackSpots, spaces }: FactionProps) {
     return (
         <Box sx={{ border: "1px solid grey", p: 1, mb: 1 }}>
             <Grid container spacing={1}>
                 <Grid size={4}>
-                    <Paper sx={{ p: 2 }}>{factionName}</Paper>
+                    <InfluenceTrack spots={influenceTrackSpots} factionName={factionName} />
                 </Grid>
                 <Grid size={8} container spacing={1}>
                     {spaces.map((space) => (

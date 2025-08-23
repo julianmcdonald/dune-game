@@ -6,7 +6,21 @@ function FactionSection() {
         <Grid container>
             <Grid size={12}>
                 <Faction
-                    factionName={"EMPEROR"}
+                    factionName="EMPEROR"
+                    influenceTrackSpots={[
+                        { spotNumber: 6 },
+                        { spotNumber: 5 },
+                        {
+                            spotNumber: 4,
+                            reward: {
+                                troops: 2,
+                            },
+                        },
+                        { spotNumber: 3 },
+                        { spotNumber: 2 },
+                        { spotNumber: 1 },
+                        { spotNumber: 0 },
+                    ]}
                     spaces={[
                         {
                             name: "CONSPIRE",
@@ -22,7 +36,7 @@ function FactionSection() {
                                     solari: 5,
                                 },
                                 troops: 2,
-                                intrigueCard: true,
+                                intrigueCard: 1,
                             },
                         },
                         {
@@ -37,7 +51,21 @@ function FactionSection() {
             </Grid>
             <Grid size={12}>
                 <Faction
-                    factionName={"SPACING GUILD"}
+                    factionName="SPACING GUILD"
+                    influenceTrackSpots={[
+                        { spotNumber: 6 },
+                        { spotNumber: 5 },
+                        {
+                            spotNumber: 4,
+                            reward: {
+                                solari: 3,
+                            },
+                        },
+                        { spotNumber: 3 },
+                        { spotNumber: 2 },
+                        { spotNumber: 1 },
+                        { spotNumber: 0 },
+                    ]}
                     spaces={[
                         {
                             name: "HEIGHLINER",
@@ -65,7 +93,21 @@ function FactionSection() {
             </Grid>
             <Grid size={12}>
                 <Faction
-                    factionName={"BENE GESSERIT"}
+                    factionName="BENE GESSERIT"
+                    influenceTrackSpots={[
+                        { spotNumber: 6 },
+                        { spotNumber: 5 },
+                        {
+                            spotNumber: 4,
+                            reward: {
+                                intrigueCard: 1,
+                            },
+                        },
+                        { spotNumber: 3 },
+                        { spotNumber: 2 },
+                        { spotNumber: 1 },
+                        { spotNumber: 0 },
+                    ]}
                     spaces={[
                         {
                             name: "SELECTIVE BREEDING",
@@ -83,7 +125,7 @@ function FactionSection() {
                         {
                             name: "SECRETS",
                             reward: {
-                                intrigueCard: true,
+                                intrigueCard: 1,
                             },
                         },
                     ]}
@@ -91,7 +133,21 @@ function FactionSection() {
             </Grid>
             <Grid size={12}>
                 <Faction
-                    factionName={"FREMEN"}
+                    factionName="FREMEN"
+                    influenceTrackSpots={[
+                        { spotNumber: 6 },
+                        { spotNumber: 5 },
+                        {
+                            spotNumber: 4,
+                            reward: {
+                                water: 1,
+                            },
+                        },
+                        { spotNumber: 3 },
+                        { spotNumber: 2 },
+                        { spotNumber: 1 },
+                        { spotNumber: 0 },
+                    ]}
                     spaces={[
                         {
                             name: "HARDY WARRIORS",

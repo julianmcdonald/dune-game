@@ -1,4 +1,4 @@
-type Resources = {
+export type Resources = {
     spice?: number;
     solari?: number;
     water?: number;
@@ -17,7 +17,7 @@ export type Spaces = {
         resource?: Resources;
         factionBump?: boolean;
         troops?: number;
-        intrigueCard?: boolean;
+        intrigueCard?: number;
         foldspaceCard?: boolean;
         trashCard?: boolean;
         drawCards?: number;
